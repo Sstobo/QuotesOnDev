@@ -1,0 +1,381 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* All Archives Page */
+
+/* GLOBAL STYLING */
+  .main-navigation ul {
+    display: block;
+  }
+  body {
+    background-color: #222222;
+  }
+  h1.page-title {
+    color: white;
+    font-weight: 200; 
+  }
+  a {
+    font-weight: 200;
+    line-height: 35px;
+  }
+  h1 {
+    font-weight: 400;
+  }
+  .home h1.entry-title {
+    font-family: 'Exo';
+  }
+  * {
+    font-family: 'Exo';
+  }
+  p {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  span {
+    font-weight: 200;
+    font-size: 18px;
+    .green {
+      color: $green;
+    }
+  }
+  .green {
+    color: $green;
+  }
+
+// HEADER AND FOOTER 
+
+ .header-bar {
+  display: flex;
+  flex-direction: row; 
+  .dashicons {
+    display: none;
+    color: $green;
+    font-size: 118px;
+    @media #{$desktop} {
+      display: block;      
+      }
+  }
+ }
+  nav.main-navigation {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    @media #{$mobile} {
+      .footer-title {
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+      }
+      }
+    @media #{$tablet} {
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      position: relative;      
+      }
+    @media #{$desktop} {
+      display: flex;
+      flex-direction: row;
+      text-align: right;
+      margin-left: 500px;
+      width: 800px;
+      position: relative;  
+      }
+      .footer-span {
+        color: white;
+        padding-left: 20px;
+      }
+      
+    a {
+      padding-left: 10px;
+      padding-right: 20px;
+      color: $green;
+      border-right: 1px solid white;
+      height: 30px;     
+    }
+    span {
+      padding-left: 10px;
+    }
+  }
+  .footer-title {
+    position: relative;
+    top: 5px;
+  }
+ 
+// FRONT PAGE
+
+  .home {
+    .left {
+      position: relative;
+      left: 90px;
+      top: 150px;
+     }
+     .right {
+       position: relative;
+       top: 150px;
+       right: 130px;
+     }
+  }
+  .hero-image {
+    background-image: url("../../assets/qod-logo.svg");
+    background-size: 100% 100%;
+    height: 46px;
+    width: 300px;
+    margin-left:20px;
+    margin-top: 30px;
+    @media #{$tablet} {
+      height: 80px;
+      width: 500px;
+      }
+      @media #{$desktop} {
+        height: 110px;
+        width: 700px;
+        margin: 0 auto;
+        }
+    }
+  
+  .quote-wrapper {
+  display: block;
+  width: 80vw;
+  padding-left: 10px;
+  @media #{$desktop} {
+    margin: 0 auto;
+   padding-left: 200px;
+   padding-right: 100px;
+    }
+    p {
+      font-size: 20px;
+      background-color: #222222;
+      color:white;
+      @media #{$tablet} {
+        font-size: 38px;
+        }
+    }
+    span {
+      color: white;
+    }
+    a {
+      color:$green;
+    }
+    button {    
+      font-size: 20px;
+      padding: 12px 36px;   
+      background-color: $background-color;
+      border: 2px solid $green;
+      box-shadow: none;
+      text-shadow: none;
+      color: $green;
+      margin-top: 20px;
+      margin-bottom: 70px;
+      outline: none;
+    }
+  }
+  #source {
+    font-style: italic;
+  }
+  #link a {
+    text-decoration: none;
+  }
+// ABOUT
+  .page-template-page-about {
+    @media #{$desktop} {
+     padding: 0 200px 0 200px; 
+     nav.main-navigation {
+       margin-left: 300px;
+     }
+     .left {
+      position: relative;
+      right: 130px;
+      top: 160px;
+     }
+     .right {
+       position: relative;
+       left: 60px;
+       top: 150px;
+     }
+      }
+    h1 {
+      color: white;
+    }
+    a {
+      color: $green;
+      text-decoration: none;
+    }  
+  }
+
+// ARCHIVE
+  .page-template-default {
+    .left {
+      position: relative;
+      left: 70px;
+      top: 150px;
+     }
+     .right {
+       position: relative;
+       top: 150px;
+       right: 150px;
+      
+     }
+        .archive-title {
+          font-size: 24px;
+          margin-top: 16px;
+          display: block;
+          color: white;
+        }
+        h1.tag-list {    
+          max-width: 90vw;
+          margin: 0 auto;
+          text-align: left;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: normal;
+          @media #{$desktop} {
+            max-width: 60vw;
+             }
+          li {
+            list-style: none;
+            display: inline;
+          }
+          a {
+            text-decoration: none;
+            display: inline;
+            color: $green;
+            padding: 4px;
+          }
+        }
+      }
+    
+// QUOTE SUBMISSION
+ .page-template-default {
+   #quote-submission-wrapper {
+     width: 60vw;
+     margin: 0 auto;
+   }
+   #quote-submission-form {
+     h1 {
+       color: white;
+     }
+    display: flex;
+    flex-direction: column;
+    input {
+      border: 1px solid $green;
+      background-color: $background-color;
+      box-shadow: none;
+      text-shadow: none;
+      color: $green;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    label {
+      color: white;
+      font-size: 14px;
+    }
+    textarea {  
+      border: 1px solid $green;
+      background-color: $background-color;
+      box-shadow: none;
+      text-shadow: none;
+      color: $green;
+      width: 70vw;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      @media #{$tablet} {
+        width: 60vw;
+        height: 30vh;
+         }
+      @media #{$desktop} {
+        width: 50vw;
+        height: 30vh;
+         }
+    }
+    input.submit-quote {
+      width: 30vw;
+    }
+   }
+ }
+
+// SINGLE PAGE
+   .single-post-wrapper {
+     width: 90vw;
+     height: 80vh;
+     margin: 0 auto;
+     .left {
+      position: relative;
+      left: 70px;
+      top: 150px;
+     }
+     .right {
+       position: relative;
+       top: 150px;
+       right: 120px;      
+     }
+     .entry-content p {
+       font-size: 28px;
+     }
+      h1.entry-title{
+       font-size: 20px;
+     }
+     button {    
+      font-size: 20px;
+      padding: 12px 36px;   
+      background-color: $background-color;
+      border: 2px solid $green;
+      box-shadow: none;
+      text-shadow: none;
+      color: $green;
+      margin-top: 20px;
+      margin-bottom: 70px;
+      outline: none;
+    }
+   }
+
+// 404
+
+   .error404 {
+     .left { 
+       position: relative;
+       top: 160px;
+       right: 150px;
+
+     }
+     .right { 
+      position: relative;
+      top: 160px;
+      left: 50px;
+
+    }
+     input {
+       border: 2px solid $green;
+       background-color: $background-color;
+       font-family: 'Exo';
+     }
+     h1 {
+       margin-top: 70px;
+     }
+     fieldset {
+       border: none;
+     }
+     @media #{$desktop} {
+      max-width: 60vw;
+      margin: 0 auto;
+       }
+     button {
+       border: none;
+       background-color: $background-color;
+       box-shadow: none;
+       text-shadow: none;
+       height: 50px;
+       .dashicons {
+         font-size: 30px;
+         color: $green;
+         position: relative;
+         bottom: 10px;
+         
+       }
+     }
+   }
