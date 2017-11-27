@@ -13,10 +13,13 @@
 
 
     <div class="quote-wrapper">
+
         <p id="quote"></p> 
+
         <span id="author"></span><span id="source"></span><span id="link"></span>
         </br>   
         <button type="button" id="new-quote-button"> Show Me Another </button> 
+        
     </div>    
 
 </main><!-- #main -->

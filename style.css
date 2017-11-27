@@ -786,7 +786,11 @@ nav.main-navigation {
     color: #00cc00;
     margin-top: 20px;
     margin-bottom: 70px;
-    outline: none; }
+    outline: none;
+    position: relative; }
+    @media (min-width: 1080px) {
+      .quote-wrapper button {
+        left: 200px; } }
 
 #source {
   font-style: italic; }
@@ -964,3 +968,36 @@ nav.main-navigation {
     color: #00cc00;
     position: relative;
     bottom: 10px; }
+
+.archive .site-content {
+  height: auto; }
+
+.archive .content-area {
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  font-size: 20px;
+  color: white;
+  font-weight: 100; }
+  @media (min-width: 1080px) {
+    .archive .content-area {
+      max-width: 60vw;
+      margin: 0 auto;
+      font-size: 36px; }
+      .archive .content-area .page-title {
+        font-size: 32px; } }
+
+.archive a {
+  color: #00cc00;
+  text-decoration: none; }
+
+.archive .border {
+  width: 70vw;
+  border-top: 1px solid white;
+  height: 10px;
+  padding-top: 10px; }
+  @media (min-width: 1080px) {
+    .archive .border {
+      width: 60vw;
+      position: relative;
+      bottom: 50px; } }

@@ -10,9 +10,6 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-
-				
-		
 				
 			</footer><!-- #colophon -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">

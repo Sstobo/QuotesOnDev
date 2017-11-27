@@ -22,7 +22,7 @@
     currentPage = 'single';
   }
 
-  $.ajax({
+    $.ajax({
     method: 'get',
     url: api_vars.root_url + 'wp/v2/posts/' + urlEndpoint
  
@@ -77,7 +77,7 @@
         var author = data[0].title.rendered;
         var link = data[0]._qod_quote_source_url;
         var source = data[0]._qod_quote_source;
-        author = "-" + author + ", ";
+        author = "&m-;" + author + ", ";
        
         $('#quote').html(quote);
         $('#author').html(author);

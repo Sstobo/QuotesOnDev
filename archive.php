@@ -22,8 +22,15 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
+					echo get_the_content();
+
 					get_template_part( 'template-parts/content' );
-				?>
+					?><br><?php 
+				
+					echo get_the_title( post );
+				?><br>
+				<div class="border"><div>
+
 
 			<?php endwhile; ?>
 
@@ -37,5 +44,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<?php	get_header(); ?>
 
-<?php get_footer(); ?>

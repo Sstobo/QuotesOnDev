@@ -173,6 +173,11 @@
       margin-top: 20px;
       margin-bottom: 70px;
       outline: none;
+      position: relative;     
+      @media #{$desktop} {
+       left: 200px;
+       
+        }
     }
   }
   #source {
@@ -335,19 +340,16 @@
    }
 
 // 404
-
    .error404 {
      .left { 
        position: relative;
        top: 160px;
        right: 150px;
-
      }
      .right { 
       position: relative;
       top: 160px;
       left: 50px;
-
     }
      input {
        border: 2px solid $green;
@@ -369,13 +371,50 @@
        background-color: $background-color;
        box-shadow: none;
        text-shadow: none;
-       height: 50px;
+       height: 50px;     
        .dashicons {
          font-size: 30px;
          color: $green;
          position: relative;
          bottom: 10px;
-         
        }
      }
    }
+
+// ARCHIVE   
+  .archive {
+  .site-content {
+    height: auto;
+  }
+  .content-area {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    @media #{$desktop} {
+      max-width: 60vw;
+      margin: 0 auto;
+      font-size: 36px;
+      .page-title {
+        font-size: 32px;
+      }
+       }
+  }
+  a {
+    color: $green;
+    text-decoration: none;   
+  }
+  .border {
+    width: 70vw;
+    border-top: 1px solid white;
+    height: 10px;
+    padding-top: 10px;
+    @media #{$desktop} {
+      width: 60vw;
+      position: relative;
+      bottom: 50px;
+  }
+}
+}
