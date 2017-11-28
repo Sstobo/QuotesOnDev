@@ -4,10 +4,6 @@
   $("#author").empty();   
   $("#link").empty();
 
-
-  // todo api_vars.page_id 
-  // modify url for get on single post page load.
-
   var urlEndpoint = '';
   var currentPage = '';
 
@@ -43,8 +39,10 @@
           source = data._qod_quote_source;
         }
         
-
-        author = "-" + author + ", ";
+        if(source.length) {
+          author += ", ";
+        }
+        author = "-" + author;
        
         $('#quote').html(quote);
         $('#author').html(author);
@@ -56,14 +54,11 @@
           $('#source').html(source);
         }
    });
-
-   
    
   $('#new-quote-button').on('click', function(event) {
     event.preventDefault();
     $("#link").empty();
     $("#source").empty();
-
 
     $.ajax({
        method: 'get',
@@ -71,14 +66,15 @@
     
     }).done( function(data) {
       
-    
-        
         var quote = data[0].excerpt.rendered;
         var author = data[0].title.rendered;
         var link = data[0]._qod_quote_source_url;
         var source = data[0]._qod_quote_source;
-        author = "&m-;" + author + ", ";
-       
+        author = "-" + author;
+              
+        if(source.length) {
+          author += ", ";
+        }
         $('#quote').html(quote);
         $('#author').html(author);
         
@@ -91,7 +87,6 @@
       });
   });
 
-
   $('.submit-quote').on('click', function (event) {
  
     event.preventDefault();
@@ -99,8 +94,7 @@
     var quote = $('#quote-box').val();
     var source = $('#quote-source').val();
     var sourceUrl = $('#quote-source-url').val();
-
-    
+ 
     $.ajax({
       method: 'post',
       url: api_vars.root_url + 'wp/v2/posts/',
@@ -120,8 +114,6 @@
      
     });
   }); 
-
-
 
 })(jQuery);
 

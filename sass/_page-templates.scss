@@ -89,8 +89,7 @@
       .footer-span {
         color: white;
         padding-left: 20px;
-      }
-      
+      }    
     a {
       padding-left: 10px;
       padding-right: 20px;
@@ -108,7 +107,6 @@
   }
  
 // FRONT PAGE
-
   .home {
     .left {
       position: relative;
@@ -137,8 +135,7 @@
         width: 700px;
         margin: 0 auto;
         }
-    }
-  
+    } 
   .quote-wrapper {
   display: block;
   width: 80vw;
@@ -175,8 +172,7 @@
       outline: none;
       position: relative;     
       @media #{$desktop} {
-       left: 200px;
-       
+       left: 200px;      
         }
     }
   }
@@ -212,7 +208,6 @@
       text-decoration: none;
     }  
   }
-
 // ARCHIVE
   .page-template-default {
     .left {
@@ -223,8 +218,7 @@
      .right {
        position: relative;
        top: 150px;
-       right: 150px;
-      
+       right: 150px;    
      }
         .archive-title {
           font-size: 24px;
@@ -253,8 +247,7 @@
             padding: 4px;
           }
         }
-      }
-    
+      }    
 // QUOTE SUBMISSION
  .page-template-default {
    #quote-submission-wrapper {
@@ -303,7 +296,6 @@
     }
    }
  }
-
 // SINGLE PAGE
    .single-post-wrapper {
      width: 90vw;
@@ -338,7 +330,6 @@
       outline: none;
     }
    }
-
 // 404
    .error404 {
      .left { 
@@ -380,7 +371,6 @@
        }
      }
    }
-
 // ARCHIVE   
   .archive {
   .site-content {
