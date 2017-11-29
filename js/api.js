@@ -9,12 +9,10 @@
 
   if( $('.home' ).length ){
     urlEndpoint = '?filter[orderby]=rand&filter[posts_per_page]=1';
-    console.log('home');
     currentPage = 'home';
   }
   else if( $('.single-post' ).length ){
     urlEndpoint = api_vars.page_id;
-    console.log(api_vars.page_id);
     currentPage = 'single';
   }
 

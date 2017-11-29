@@ -373,12 +373,13 @@
    }
 // ARCHIVE   
   .archive {
-  .site-content {
-    height: auto;
+  .content {
+    font-size: 40px;
   }
   .content-area {
     width: 90vw;
-    height: auto;
+    height: 1500px;
+    display: block;
     margin: 0 auto;
     font-size: 20px;
     color: white;
@@ -386,9 +387,9 @@
     @media #{$desktop} {
       max-width: 60vw;
       margin: 0 auto;
-      font-size: 36px;
+      font-size: 22px;
       .page-title {
-        font-size: 32px;
+        font-size: 22px;
       }
        }
   }
@@ -401,6 +402,7 @@
     border-top: 1px solid white;
     height: 10px;
     padding-top: 10px;
+    margin: 20px 0 20px 0;
     @media #{$desktop} {
       width: 60vw;
       position: relative;

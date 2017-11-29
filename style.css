@@ -969,12 +969,13 @@ nav.main-navigation {
     position: relative;
     bottom: 10px; }
 
-.archive .site-content {
-  height: auto; }
+.archive .content {
+  font-size: 40px; }
 
 .archive .content-area {
   width: 90vw;
-  height: auto;
+  height: 1500px;
+  display: block;
   margin: 0 auto;
   font-size: 20px;
   color: white;
@@ -983,9 +984,9 @@ nav.main-navigation {
     .archive .content-area {
       max-width: 60vw;
       margin: 0 auto;
-      font-size: 36px; }
+      font-size: 22px; }
       .archive .content-area .page-title {
-        font-size: 32px; } }
+        font-size: 22px; } }
 
 .archive a {
   color: #00cc00;
@@ -995,7 +996,8 @@ nav.main-navigation {
   width: 70vw;
   border-top: 1px solid white;
   height: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin: 20px 0 20px 0; }
   @media (min-width: 1080px) {
     .archive .border {
       width: 60vw;

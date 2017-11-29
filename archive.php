@@ -21,9 +21,10 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					echo get_the_content();
-
+			
+					<div class="content">	<?php echo get_the_content();  ?></div>
+					<span class="author"><?php echo '-', get_the_title(); ?> </span>
+<?php
 					get_template_part( 'template-parts/content' );
 					?><br><?php 
 				
@@ -43,6 +44,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<?php	get_header(); ?>
 	</div><!-- #primary -->
-<?php	get_header(); ?>
 
+
+<?php get_footer(); ?>
