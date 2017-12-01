@@ -31,6 +31,6 @@
 	
 			</header><!-- #masthead -->
 			<div class="header-bar">
-			<span class="dashicons left"><i class="fa fa-quote-left" aria-hidden="true"></i></span>	<div class="hero-image"></div><span class="dashicons right"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+			<span class="dashicons left"><i class="fa fa-quote-left" aria-hidden="true"></i></span>	<a class="hero-image" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a><span class="dashicons right"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
 </div>
 			<div id="content" class="site-content">
