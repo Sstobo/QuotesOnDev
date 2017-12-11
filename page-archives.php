@@ -16,7 +16,7 @@ get_header(); ?>
     <div id="archive-wrapper">
           
 
-          <h1 class="tag-list">
+          <div class="tag-list">
           <?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -29,9 +29,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
           
           
-          
-          
-          
           <span class="archive-title"> Quote Authors  </span>  <br>    
                 <?php
                 $posts = get_posts( 'posts_per_page=-1' );
@@ -39,20 +36,20 @@ get_header(); ?>
                   ?>
                               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 <?php endforeach; wp_reset_postdata(); ?>           
-           </h1>
+           </div>
 
-          <h1 class="tag-list"><span class="archive-title"> Categories  </span>  <br>
+          <div class="tag-list"><span class="archive-title"> Categories  </span>  <br>
           <?php wp_list_categories('title_li='); ?>  
-          </h1>
+          </div>
        
 
-           <h1 class="tag-list"><span class="archive-title"> Tags </span>   <br>
+           <div class="tag-list"><span class="archive-title"> Tags </span>   <br>
             <?php
              $tags = get_tags( array('orderby' => 'count', 'order' => 'DESC') );
                 foreach ( $tags as $tag ) {
                 echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . '' . ' </a></li>';
                 }?>
-          </h1>
+          </div>
     </div>
  
   

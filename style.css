@@ -835,7 +835,7 @@ nav.main-navigation {
   display: block;
   color: white; }
 
-.page-template-default h1.tag-list {
+.page-template-default .tag-list {
   max-width: 90vw;
   margin: 0 auto;
   text-align: left;
@@ -843,12 +843,12 @@ nav.main-navigation {
   line-height: 24px;
   letter-spacing: normal; }
   @media (min-width: 1080px) {
-    .page-template-default h1.tag-list {
+    .page-template-default .tag-list {
       max-width: 60vw; } }
-  .page-template-default h1.tag-list li {
+  .page-template-default .tag-list li {
     list-style: none;
     display: inline; }
-  .page-template-default h1.tag-list a {
+  .page-template-default .tag-list a {
     text-decoration: none;
     display: inline;
     color: #00cc00;

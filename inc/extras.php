@@ -56,7 +56,7 @@ function qod_modify_post_title($input){
 
 ################# removed  'priority, accepted_args '
 
-add_filter( 'enter_title_here',  'qod_modify_title');
+add_filter( 'enter_title_here',  'qod_modify_post_title');
 
 /**
  * Filter post archive

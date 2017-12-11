@@ -26,10 +26,7 @@ get_header(); ?>
 					<span class="author"><?php echo '-', get_the_title(); ?> </span>
 <?php
 					get_template_part( 'template-parts/content' );
-					?><br><?php 
-				
-					echo get_the_title( post );
-				?><br>
+					?><br><br>
 				<div class="border"><div>
 
 
